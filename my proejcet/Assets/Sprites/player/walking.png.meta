@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fb9e4e52bdabcf34d8d0a55c2dbe93e5
+guid: a1dd13ab804cb944db4314d392a42bee
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player animation_0
+      name: walking_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a9fea3893c5cae498b34fbea29f1d6b
-      internalID: -394866820
+      spriteID: 0a9aaf888113e3648b20b3888fdd983e
+      internalID: 1765124376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player animation_1
+      name: walking_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc7bc6a5d087ff429053c2a61aeaec2
+      internalID: 790772657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_2
       rect:
         serializedVersion: 2
         x: 0
@@ -145,8 +166,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b101305e6bb423f4caf3d91525414f2f
-      internalID: 1550886647
+      spriteID: 3c413d9484c3d6e43a4350d2249e1cc7
+      internalID: -980268030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d275e5fd9e8e54a40834e802c3b26684
+      internalID: -1586513764
       vertices: []
       indices: 
       edges: []
@@ -162,8 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player animation_0: -394866820
-      player animation_1: 1550886647
+      walking_0: 1765124376
+      walking_1: 790772657
+      walking_2: -980268030
+      walking_3: -1586513764
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
