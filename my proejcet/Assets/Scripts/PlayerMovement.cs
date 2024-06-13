@@ -44,6 +44,8 @@ public class PlayerMovement : MonoBehaviour
         }
 
         Flip();
+
+        anim.SetBool("isJumping", !IsGrounded());
     }
 
     private void FixedUpdate()
