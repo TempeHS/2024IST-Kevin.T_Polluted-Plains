@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight = true;
     private Animator anim;
 
+    public CollectibleManager cm;
+
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -66,6 +68,15 @@ public class PlayerMovement : MonoBehaviour
             Vector3 localScale = transform.localScale;
             localScale.x *= -1f;
             transform.localScale = localScale;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Collectible"))
+        {
+            cm.collectibleCount++;
+            Destroy(other.gameObject);
         }
     }
 }
