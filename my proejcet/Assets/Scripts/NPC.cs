@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class NPC : MonoBehaviour
 {
     public GameObject dialoguePanel;
+    public GameObject interactPanel;
     public Text dialogueText;
     public string[] dialogue;
     private int index;
 
+    public GameObject contButton;
     public float wordSpeed;
     public bool playerIsClose;
 
@@ -26,8 +28,28 @@ public class NPC : MonoBehaviour
             else
             {
                 dialoguePanel.SetActive(true);
+                StartCoroutine(Typing());
             }
         }
+
+        if(dialogueText.text == dialogue[index])
+        {
+            contButton.SetActive(true);
+        }
+
+        if(playerIsClose)
+        {
+            interactPanel.SetActive(true);
+        }
+        else
+        {
+            interactPanel.SetActive(false);
+        }
+
+        if(dialoguePanel.activeInHierarchy)
+            {
+                interactPanel.SetActive(false);
+            }
     }
 
     public void zeroText()
@@ -43,6 +65,22 @@ public class NPC : MonoBehaviour
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
+        }
+    }
+
+    public void NextLine()
+    {
+        contButton.SetActive(false);
+
+        if(index < dialogue.Length -1)
+        {
+            index++;
+            dialogueText.text = "";
+            StartCoroutine(Typing());
+        }
+        else
+        {
+
         }
     }
 
