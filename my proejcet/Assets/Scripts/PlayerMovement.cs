@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
+        // jumping
 
         if(horizontal != 0)
         {
@@ -44,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("isRunning", false);
         }
+        // flipping sprite variable
 
         Flip();
 
@@ -53,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        // walking i think
     }
 
     private bool IsGrounded()
@@ -69,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
+        // flipping sprite
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -78,5 +82,6 @@ public class PlayerMovement : MonoBehaviour
             cm.collectibleCount++;
             Destroy(other.gameObject);
         }
+        // collectibles
     }
 }
