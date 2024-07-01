@@ -43,6 +43,6 @@ public class PlayerHealth : MonoBehaviour
     IEnumerator Dying()
     {
         yield return new WaitForSeconds(2);
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
