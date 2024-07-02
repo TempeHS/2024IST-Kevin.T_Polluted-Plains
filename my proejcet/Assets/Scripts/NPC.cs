@@ -30,7 +30,7 @@ public class NPC : MonoBehaviour
                 dialoguePanel.SetActive(true);
                 StartCoroutine(Typing());
             }
-        }
+        } // pressing e to interact
 
         if(dialogueText.text == dialogue[index])
         {
@@ -57,7 +57,7 @@ public class NPC : MonoBehaviour
         dialogueText.text = "";
         index = 0;
         dialoguePanel.SetActive(false);
-    }
+    } // reset text (maybe)
 
     IEnumerator Typing()
     {
@@ -66,7 +66,7 @@ public class NPC : MonoBehaviour
             dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
         }
-    }
+    } // word speed for npc
 
     public void NextLine()
     {
@@ -80,7 +80,7 @@ public class NPC : MonoBehaviour
         }
         else
         {
-
+            zeroText();
         }
     }
 
