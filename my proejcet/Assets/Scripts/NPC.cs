@@ -47,9 +47,10 @@ public class NPC : MonoBehaviour
         }
 
         if(dialoguePanel.activeInHierarchy)
-            {
-                interactPanel.SetActive(false);
-            }
+        {
+            interactPanel.SetActive(false);
+        }
+        Debug.Log(playerIsClose);
     }
 
     public void zeroText()

@@ -44,5 +44,6 @@ public class PlayerHealth : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        // probably should change it to teleport you to respawn point instead of reloading scene
     }
 }
