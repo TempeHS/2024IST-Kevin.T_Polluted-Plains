@@ -50,7 +50,6 @@ public class NPC : MonoBehaviour
         {
             interactPanel.SetActive(false);
         }
-        Debug.Log(playerIsClose);
     }
 
     public void zeroText()
