@@ -2,17 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC : MonoBehaviour
+[System.Serializable]
+public class DialogueCharacter
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string name;
+    public Sprite icon;
+}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+[System.Serializable]
+public class DialogueLine
+{
+    public DialogueCharacter character;
+    [TextArea(3, 10)]
+    public string line;
+}
+
+[System.Serializable]
+public class Dialogue
+{
+    public List<DialogueLine> dialogueLines = new List<DialogueLine>();
+}
+
+public class DialogueTrigger : MonoBehaviour
+{
+    public Dialogue dialogue;
 }
