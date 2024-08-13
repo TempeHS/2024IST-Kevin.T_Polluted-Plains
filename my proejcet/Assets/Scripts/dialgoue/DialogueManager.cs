@@ -18,13 +18,19 @@ public class DialogueManager : MonoBehaviour
     public float typingSpeed = 0.02f;
  
     public Animator animator;
- 
+
+    public DialogueTrigger dialogueTrigger;
+    
+    public bool playerIsClose;
+
     private void Awake()
     {
         if (Instance == null)
             Instance = this;
  
         lines = new Queue<DialogueLine>();
+
+        dialogueTrigger = FindObjectOfType<DialogueTrigger>();
     }
  
     public void StartDialogue(Dialogue dialogue)
@@ -74,6 +80,22 @@ public class DialogueManager : MonoBehaviour
     {
         isDialogueActive = false;
         animator.Play("out");
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            playerIsClose = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            playerIsClose = false;
+        }
     }
 }
  

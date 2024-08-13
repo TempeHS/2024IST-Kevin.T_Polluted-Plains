@@ -879,10 +879,12 @@ MonoBehaviour:
       line: hi im a bee
     - character:
         name: Bee
-      line: we need help!!! we need YOU to join the army
+      line: 1ui3nefijkdsjknkjnrjgnkjznkcvnbljkzfbhjbllskbkbgjlkadgjnegjneuiagnkfjdv
     - character:
         name: Bee
-      line: i need some seeds so we can pollinate so we can live and not die
+      line: lorem ipsum 1234
+  playerIsClose: 0
+  interact: 0
 --- !u!1 &186248468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,10 +1109,9 @@ MonoBehaviour:
       line: hi welcome to my shop
     - character:
         name: shopkeeper
-      line: tricekd!!! im poor so i have no items to slel
-    - character:
-        name: shopkeeper
-      line: f u
+      line: im poor
+  playerIsClose: 0
+  interact: 0
 --- !u!61 &231141906
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8585,6 +8586,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     dialogueLines: []
+  playerIsClose: 0
+  interact: 0
 --- !u!1 &1820097492
 GameObject:
   m_ObjectHideFlags: 0
@@ -9137,6 +9140,8 @@ MonoBehaviour:
   isDialogueActive: 0
   typingSpeed: 0.01
   animator: {fileID: 1897861362}
+  dialogueTrigger: {fileID: 0}
+  playerIsClose: 0
 --- !u!95 &1897861362
 Animator:
   serializedVersion: 5

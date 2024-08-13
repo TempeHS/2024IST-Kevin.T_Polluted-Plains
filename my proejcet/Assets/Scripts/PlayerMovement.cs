@@ -26,6 +26,11 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
+        if (DialogueManager.Instance.isDialogueActive)
+        {
+            horizontal = 0f;
+        }
+
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
@@ -37,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         }
         // jumping
 
-        if(horizontal != 0)
+        if (horizontal != 0)
         {
             anim.SetBool("isRunning", true);
         }
@@ -77,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Collectible"))
+        if (other.gameObject.CompareTag("Collectible"))
         {
             cm.collectibleCount++;
             Destroy(other.gameObject);

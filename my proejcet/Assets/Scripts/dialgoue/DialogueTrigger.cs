@@ -20,7 +20,7 @@ public class Dialogue
 {
     public List<DialogueLine> dialogueLines = new List<DialogueLine>();
 }
- 
+
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
@@ -29,10 +29,38 @@ public class DialogueTrigger : MonoBehaviour
     {
         DialogueManager.Instance.StartDialogue(dialogue);
     }
+
+    public bool playerIsClose;
+    public bool interact;
  
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if (collision.tag == "Player")
+        {
+            playerIsClose = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            playerIsClose = false;
+        }
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown("e"))
+        {
+            interact = true;
+        }
+        else
+        {
+            interact = false;
+        }
+
+        if (playerIsClose && interact)
         {
             TriggerDialogue();
         }
