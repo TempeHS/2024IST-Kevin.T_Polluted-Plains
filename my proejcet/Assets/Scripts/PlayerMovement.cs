@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpingPower = 16f;
     private bool isFacingRight = true;
     private Animator anim;
+    public Animator interactAnim;
 
     public CollectibleManager cm;
 
@@ -88,5 +89,17 @@ public class PlayerMovement : MonoBehaviour
             Destroy(other.gameObject);
         }
         // collectibles
+
+        if (other.gameObject.CompareTag("NPC"))
+        {
+            interactAnim.Play("in");
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("NPC"))
+        {
+            interactAnim.Play("out");
+        }
     }
 }
