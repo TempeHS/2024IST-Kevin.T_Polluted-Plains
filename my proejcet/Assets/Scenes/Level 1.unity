@@ -9210,7 +9210,7 @@ GameObject:
   - component: {fileID: 1867603013}
   - component: {fileID: 1867603014}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Collectible Count
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
