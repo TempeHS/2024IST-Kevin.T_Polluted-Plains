@@ -879,8 +879,8 @@ MonoBehaviour:
         name: Bee
       line: hi im a bee
     - character:
-        name: Bee
-      line: 1ui3nefijkdsjknkjnrjgnkjznkcvnbljkzfbhjbllskbkbgjlkadgjnegjneuiagnkfjdv
+        name: You
+      line: ok
     - character:
         name: Bee
       line: lorem ipsum 1234
@@ -1073,7 +1073,7 @@ SpriteRenderer:
   m_Size: {x: 4, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &231141904
@@ -4059,7 +4059,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &986255295

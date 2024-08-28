@@ -95,6 +95,7 @@ public class DialogueManager : MonoBehaviour
         if (collision.tag == "Player")
         {
             playerIsClose = false;
+            lines.Clear();
         }
     }
 }
