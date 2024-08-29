@@ -32,6 +32,8 @@ public class DialogueTrigger : MonoBehaviour
 
     public bool playerIsClose;
     public bool interact;
+
+    public bool forceDialogue;
  
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -60,7 +62,11 @@ public class DialogueTrigger : MonoBehaviour
             interact = false;
         }
 
-        if (playerIsClose && interact)
+        if (playerIsClose && forceDialogue)
+        {
+            TriggerDialogue();
+        }
+        else if (playerIsClose && interact)
         {
             TriggerDialogue();
         }
