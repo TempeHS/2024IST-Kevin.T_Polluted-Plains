@@ -28,5 +28,7 @@ public class ForcedTriggers : MonoBehaviour
         boxCollider.enabled = false;
         yield return new WaitForSeconds(4);
         DManim.Play("out");
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject);
     }
 }
