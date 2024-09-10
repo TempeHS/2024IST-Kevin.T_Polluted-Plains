@@ -12,6 +12,13 @@ public class SwitchModes : MonoBehaviour
     public Image dBoxImage;
     public TextMeshProUGUI text;
 
+    public bool EnableContinue;
+    public bool EnableInteract;
+    public int FontSize;
+    public Color TextColour;
+    public bool CentreTextAlignment;
+    public bool TransparentDialogueBox;
+
     void Start()
     {
         Continue = dialogueBox.transform.GetChild(2).gameObject;
@@ -27,12 +34,27 @@ public class SwitchModes : MonoBehaviour
 
     IEnumerator SwitchToNormal()
     {
-        Continue.SetActive(true);
-        Interact.SetActive(true);
-        text.fontSize = 30;
-        text.color = Color.black;
-        text.alignment = TextAlignmentOptions.TopLeft;
-        dBoxImage.color = new Color(255, 255, 255, 255);
+        Continue.SetActive(EnableContinue);
+        Interact.SetActive(EnableInteract);
+        text.fontSize = FontSize;
+        text.color = TextColour;
+        if (CentreTextAlignment)
+        {
+            text.alignment = TextAlignmentOptions.Bottom;
+        }
+        else
+        {
+            text.alignment = TextAlignmentOptions.TopLeft;
+        }
+        
+        if (TransparentDialogueBox)
+        {
+            dBoxImage.color = new Color(255, 255, 255, 0);
+        }
+        else
+        {
+            dBoxImage.color = new Color(255, 255, 255, 255);
+        }
         yield return new WaitForSeconds(0.1f);
         Destroy(gameObject);
     }
