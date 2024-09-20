@@ -7,7 +7,9 @@ public class CollectibleManager : MonoBehaviour
 {
     public int collectibleCount;
     public Text collectibleText;
-    public GameObject door;
+    public GameObject newBee;
+    public GameObject oldBee;
+    public GameObject changeDialogue;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +21,11 @@ public class CollectibleManager : MonoBehaviour
     {
         collectibleText.text = "Collectible Count: " + collectibleCount.ToString();
 
-        if(collectibleCount == 6)
+        if(collectibleCount == 3)
         {
-            Destroy(door);
+            oldBee.SetActive(false);
+            newBee.SetActive(true);
+            changeDialogue.SetActive(true);
         }
     }
 }
