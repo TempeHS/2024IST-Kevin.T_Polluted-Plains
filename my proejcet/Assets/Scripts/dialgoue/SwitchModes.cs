@@ -28,11 +28,11 @@ public class SwitchModes : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            StartCoroutine(SwitchToNormal());
+            StartCoroutine(Switch());
         }
     }
 
-    IEnumerator SwitchToNormal()
+    IEnumerator Switch()
     {
         Continue.SetActive(EnableContinue);
         Interact.SetActive(EnableInteract);

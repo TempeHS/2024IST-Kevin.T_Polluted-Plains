@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
- 
+
 [System.Serializable]
 public class DialogueCharacter
 {
@@ -23,6 +23,8 @@ public class Dialogue
 
 public class DialogueTrigger : MonoBehaviour
 {
+    public Animator DManim;
+
     public Dialogue dialogue;
  
     public void TriggerDialogue()
@@ -48,6 +50,7 @@ public class DialogueTrigger : MonoBehaviour
         if (collision.tag == "Player")
         {
             playerIsClose = false;
+            DManim.Play("out");
         }
     }
 

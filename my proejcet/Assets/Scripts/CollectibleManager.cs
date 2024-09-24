@@ -10,11 +10,6 @@ public class CollectibleManager : MonoBehaviour
     public GameObject newBee;
     public GameObject oldBee;
     public GameObject changeDialogue;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()

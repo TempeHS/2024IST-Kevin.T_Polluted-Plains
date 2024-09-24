@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float horizontal;
+    public float horizontal;
     public float speed = 8f;
     public float jumpingPower = 16f;
     private bool isFacingRight = true;
@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator interactAnim;
 
     public CollectibleManager cm;
+    public L3CollectibleManager L3cm;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -21,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     {
         anim = GetComponent<Animator>();
     }
+
 
     // Update is called once per frame
     void Update()
@@ -89,6 +91,14 @@ public class PlayerMovement : MonoBehaviour
         {
             interactAnim.Play("in");
         }
+
+
+        if (other.gameObject.CompareTag("Trash"))
+        {
+            L3cm.collectibleCount++;
+            Destroy(other.gameObject);
+        }
+        // hardcoded bad code ragebait
     }
     private void OnTriggerExit2D(Collider2D other)
     {
