@@ -624,6 +624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66a6d573181d071498289be72e4ec460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  horizontal: 0
   speed: 4
   jumpingPower: 11
   interactAnim: {fileID: 840875218}
@@ -1451,7 +1452,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 136138959}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 3
@@ -5982,7 +5983,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 136138959}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 3

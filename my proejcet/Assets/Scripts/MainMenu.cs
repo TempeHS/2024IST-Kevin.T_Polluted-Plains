@@ -7,7 +7,7 @@ public class PlayButton : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync("Level 1");
+        SceneManager.LoadSceneAsync("House (L1)");
     }
 
     public void QuitGame()
