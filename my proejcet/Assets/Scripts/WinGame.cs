@@ -9,6 +9,7 @@ public class WinGame : MonoBehaviour
 {
     public TextMeshProUGUI dialogue;
     public GameObject winText;
+    public GameObject bouncy;
 
     // Update is called once per frame
     void Update()
@@ -16,6 +17,7 @@ public class WinGame : MonoBehaviour
         if (dialogue.text == "yahoo!")
         {
             winText.SetActive(true);
+            bouncy.SetActive(true);
             StartCoroutine(Quit());
         }
     }
