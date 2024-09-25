@@ -2006,7 +2006,7 @@ MonoBehaviour:
     dialogueLines:
     - character:
         name: 
-      line: it should be around here...
+      line: it should be around here
   playerIsClose: 0
   interact: 0
   forceDialogue: 1
