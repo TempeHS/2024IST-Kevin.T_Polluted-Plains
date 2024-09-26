@@ -64,6 +64,7 @@ The assets for my game were created by me using Piskel.
 
 ### Dialogue
 ![dialogue example](https://github.com/user-attachments/assets/ed4b74db-d57b-4ac6-988b-42a6d272165e)
+
 [Unity Easy DIALOGUE SYSTEM in 270 Seconds](https://www.youtube.com/watch?v=DOP_G5bsySA/)
 
 ### Collectibles
