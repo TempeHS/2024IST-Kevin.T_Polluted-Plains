@@ -8,7 +8,7 @@ The premise of the game is to clean up the overly polluted world, through growin
 ## Controls
 To control the character, the player uses the keys A and D on the keyboard to move left and right, the space bar to jump and E to interact with certain objects or NPCs.
 
-![Diagram of keyboard and mouse showing the controls, being A and D to move, the space bar to jump, E to interact, and the left mouse button to click buttons](readme images/controls.png)
+![controls](https://github.com/user-attachments/assets/0d6de855-94b7-4859-8743-629c8253a40b)
 
 # Developer Documentation
 ## What I intended to make
@@ -18,29 +18,29 @@ My game will be intended for a younger audience, and this is because they may no
 
 ## Assets
 ### Player
-!(readme images/assets/player.png)
+![player](https://github.com/user-attachments/assets/ce500836-fe34-42a3-a441-8b851c074fc5)
 
 ### Tiles
-!(readme images/assets/tiles.png)
+![tiles](https://github.com/user-attachments/assets/52c98b49-c415-4668-8be3-34ce04d77049)
 
 ### Environment
-!(readme images/assets/environment.png)
+![environment](https://github.com/user-attachments/assets/044f2621-def7-4e31-82a2-842cd9f70025)
 
 ### UI
-!(readme images/assets/ui.png)
+![ui](https://github.com/user-attachments/assets/3b540c08-c49b-426f-9bd9-252e1f133ca3)
 
 ### Other
-!(readme images/assets/other.png)
+![other](https://github.com/user-attachments/assets/0c34913c-d926-466f-9126-1c7f7014e6d0)
 
 ## Tools used
 ### Unity Game Engine
 >Game
-!(readme images/tools used/unity.png)
+![unity](https://github.com/user-attachments/assets/9c524320-d27f-47a8-9de8-5e4b224c5ed5)
 
 ### Visual Studio Code
 >Coding
-!(readme images/tools used/visual studio.png)
+![visual studio](https://github.com/user-attachments/assets/e6c6f364-cf83-468b-b662-83ddde0f101f)
 
 ### Piskel
 >Sprites
-!(readme images/tools used/piskel.png)
+![piskel](https://github.com/user-attachments/assets/af329ac3-f616-4d35-b492-6eadebcf267f)
