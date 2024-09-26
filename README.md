@@ -72,3 +72,7 @@ The assets for my game were created by me using Piskel.
 
 ### Health Bar
 [How to make a Health Bar (Unity 2D Tutorial for Beginners)](https://www.youtube.com/watch?v=Gtw7VyuMdDc&t=1s)
+
+
+## Scripts
+[All Scripts](https://github.com/TempeHS/2024IST-Kevin.T_Polluted-Plains/tree/main/my%20proejcet/Assets/Scripts)
