@@ -1,4 +1,29 @@
 # Polluted Plains
+## Table of Contents
+  - [What this is](##What-this-is)
+- [User Documentation](#User-Documentation)
+  - [Walkthrough](##Walkthrough)
+  - [Controls](##Controls)
+  - [Objectives](##Objectives)
+- [Developer Documentation](#Developer-Documentation)
+  - [What I intended to make](##What-I-intended-to-make)
+  - [Assets](##Assets)
+    - [Player](###Player)
+    - [Tiles](###Tiles)
+    - [Environment](###Environment)
+    - [UI](###UI)
+    - [Other](###Other)
+  - [Tools used](##Tools-used)
+    - [Unity Game Engine](###Unity-Game-Engine)
+    - [Visual Studio Code](###Visual-Studio-Code)
+    - [Piskel](###Piskel)
+  - [Features implemented & tutorials](##Features-implemented-&-tutorials)
+    - [Camera](###Camera)
+    - [Dialogue](###Dialogue)
+    - [Collectibles](###Collectibles)
+    - [Health Bar](###Health-Bar)
+  - [Scripts](##Scripts)
+
 
 ## What this is
 Polluted Plains is a game that I have made for a Year 10 assessment, with the topic of 'Games for Change'. The project requires me to create a 2D platformer game in Unity, create assets in Piskel and use Github to create a repository for my game.
