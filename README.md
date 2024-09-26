@@ -1,14 +1,14 @@
 # Polluted Plains
 ## What this is
-Polluted Plains is a game that I have made for a Year 10 assessment, with the topic of 'Games for Change'. 
+Polluted Plains is a game that I have made for a Year 10 assessment, with the topic of 'Games for Change'. The project requires me to create a 2D platformer game in Unity, create assets in Piskel and use Github to create a repository for my game.
 
-The premise of the game
+The premise of the game is to clean up the overly polluted world, through growing new plants and cleaning up the environment. 
 
 # User Documentation
 ## Controls
 To control the character, the player uses the keys A and D on the keyboard to move left and right, the space bar to jump and E to interact with certain objects or NPCs.
 
-    (image here)
+![Diagram of keyboard and mouse showing the controls, being A and D to move, the space bar to jump, E to interact, and the left mouse button to click buttons](/readme images/controls.png)
 
 # Developer Documentation
 ## What I intended to make
@@ -18,20 +18,29 @@ My game will be intended for a younger audience, and this is because they may no
 
 ## Assets
 ### Player
+!(/readme images/assets/player.png)
 
 ### Tiles
+!(/readme images/assets/tiles.png)
 
 ### Environment
+!(/readme images/assets/environment.png)
 
 ### UI
+!(/readme images/assets/ui.png)
 
 ### Other
+!(/readme images/assets/other.png)
 
 ## Tools used
 ### Unity Game Engine
 >Game
+!(/readme images/tools used/unity.png)
 
 ### Visual Studio Code
 >Coding
+!(/readme images/tools used/visual studio.png)
+
 ### Piskel
 >Sprites
+!(/readme images/tools used/piskel.png)
