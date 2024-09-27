@@ -77,14 +77,17 @@ The assets for my game were created by me using Piskel.
 ## Tools used
 ### Unity Game Engine
 >Game
+
 ![unity](https://github.com/user-attachments/assets/9c524320-d27f-47a8-9de8-5e4b224c5ed5)
 
 ### Visual Studio Code
 >Coding
+
 ![visual studio](https://github.com/user-attachments/assets/e6c6f364-cf83-468b-b662-83ddde0f101f)
 
 ### Piskel
 >Sprites
+
 ![piskel](https://github.com/user-attachments/assets/af329ac3-f616-4d35-b492-6eadebcf267f)
 
 ## Features implemented & tutorials
