@@ -2,6 +2,7 @@
 ## Table of Contents
   - [What this is](#What-this-is)
 - [User Documentation](#User-Documentation)
+  - [How to download the game](#How-to-download-the-game)
   - [Walkthrough](#Walkthrough)
   - [Controls](#Controls)
   - [Objectives](#Objectives)
@@ -31,6 +32,9 @@ Polluted Plains is a game that I have made for a Year 10 assessment, with the to
 The premise of the game is to clean up the overly polluted world, through growing new plants and cleaning up the environment. 
 
 # User Documentation
+## How to download the game
+To download the game, you have to go to the 'Releases' area to the right, and download `Polluted.Plains.zip`, then extract it and run `polluted plains.exe`
+
 ## Walkthrough
 [Game Walkthrough](https://github.com/user-attachments/assets/0547a83c-b08f-4b42-8889-65ea3edf09e5)
 
@@ -100,4 +104,6 @@ The assets for my game were created by me using Piskel.
 
 
 ## Scripts
+C#
+
 [All Scripts](https://github.com/TempeHS/2024IST-Kevin.T_Polluted-Plains/tree/main/my%20proejcet/Assets/Scripts)
